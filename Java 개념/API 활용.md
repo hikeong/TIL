@@ -24,6 +24,8 @@ System.out.println(text.substring(5));       // "Programming"
 System.out.println(text.toLowerCase());      // "java programming"
 System.out.println(text.contains("Java"));   // true
 
+```
+
 ## ArrayList 클래스 – 크기가 자유로운 배열
 
 자바의 배열(`Array`)은 크기가 고정되어 있다는 단점이 있다.  
@@ -45,6 +47,8 @@ fruits.remove("사과");
 System.out.println(fruits.contains("사과"));  // false
 System.out.println(fruits.size());     // 2
 
+```
+
 ## HashMap 클래스 – 키와 값을 쌍으로 저장
 
 `HashMap`은 데이터를 **키(Key)** 와 **값(Value)** 형태로 저장하는 자료구조다.  
@@ -65,3 +69,6 @@ System.out.println(scores.get("하경"));         // 90
 scores.remove("하이경");
 System.out.println(scores.containsKey("하이경")); // false
 
+```
+
+피드백 적극 받습니다
