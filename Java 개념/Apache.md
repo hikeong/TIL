@@ -1,13 +1,11 @@
 # Apache HTTP Server란?
 
-## Apache HTTP Server 소개
-
 Apache HTTP Server(줄여서 **Apache** 또는 **httpd**)는 세계적으로 가장 널리 사용되는 오픈소스 웹 서버입니다.  
 웹 페이지를 사용자에게 제공하는 기본적인 역할을 하며, 정적 파일(html, css, js 등)을 HTTP 프로토콜을 기반으로 안정적으로 제공합니다.
 
 Apache는 1995년에 처음 출시되었고, 현재도 꾸준히 업데이트 및 유지보수가 이루어지고 있는 신뢰성 높은 소프트웨어입니다.
 
-## 주요 특징
+## 특징
 
 - **정적 콘텐츠 제공 최적화**  
   HTML, CSS, JavaScript, 이미지 등 정적 파일을 빠르게 전달합니다.
