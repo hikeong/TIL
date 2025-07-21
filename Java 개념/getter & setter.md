@@ -28,6 +28,6 @@ public class User {
 
 자바는 기본적으로 **캡슐화(encapsulation)**를 지향하기 때문에, 필드를 private으로 선언하고 getter/setter를 통해 접근하는 구조를 권장합니다.
 
-# 그럼 그냥 public 
+# 그럼 그냥 public 필드를 쓰면 되는 거 아닌가?
 
 
