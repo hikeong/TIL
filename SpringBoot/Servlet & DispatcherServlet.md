@@ -33,7 +33,13 @@ public class HelloServlet extends HttpServlet {
 DispatcherServlet은 **Spring MVC에서 요청을 처하는 중앙 Servlet**입니다.
 HTTP 요청은 DispatcherServlet을 거쳐 알맞은 컨트롤러로 전달되고, <br>처리 결과는 view로 매핑되어 Response로 전송됩니다.
 
-▶DispatcherServlet의 주요 처리 과정
+▶ DispatcherServlet의 역할
+ - 클라이언트의 요청을 받아 해당 요청에 맞는 컨트롤러로 전달
+ - 컨트롤러의 실행 결과를 기반으로 ViewResolver를 통해 화면(View)을 결정
+ - 최종적으로 응답을 완성해 클라이언트에 반환
+
+
+▶ DispatcherServlet의 주요 처리 과정
 
 1. 요청 접수
    - 클라이언트로부터 HTTP 요청이 들어오면 DispatcherServlet이 가장 먼저 요청을 받음
@@ -60,5 +66,20 @@ HTTP 요청은 DispatcherServlet을 거쳐 알맞은 컨트롤러로 전달되�
 6. 뷰 렌더링
    - View 객체를 통해 실제 뷰를 렌더링함
    - JSP, Thymeleaf 등 다양한 템플릿 엔진을 지원함
+  
+## 3. Servlet vs DispatcherServlet 비교
+
+| 항목       | Servlet                              | DispatcherServlet                            |
+|------------|---------------------------------------|-----------------------------------------------|
+| 소속       | Java EE                              | Spring Framework                              |
+| 역할       | 요청/응답 직접 처리                  | 요청 분배 및 통합 처리                        |
+| 처리 방식  | 개발자가 직접 doGet/doPost 등 구현   | @Controller, @RequestMapping 등 어노테이션 기반 처리 |
+| 뷰 처리    | 응답 HTML 직접 구성                  | ViewResolver 통해 뷰 자동 처리               |
+| 확장성     | 낮음                                 | 높음 (스프링 생태계와 연계)                 
+
+## 4. 정리
+
+Servlet은 Java 웹 개발의 기반이 되는 기술이고, DispatherServlet은 이를 Spring에서 구조적으로 확장한 형태입니다.
+DispacherServlet은 개발자가 요청와 응답 처리에만 집중할 수 있도록 도와주고, Spring MVC 구조의 핵심 역항를 담당합니다.
    
  
