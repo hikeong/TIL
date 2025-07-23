@@ -50,7 +50,7 @@ public class OrderService {
    }
 }
 ```
-스프링이 `PaymentService`타입의 빈을 자동으로 찾아서 OrderService에 주입해준다.
+스프링이 `PaymentService`타입의 빈을 자동으로 찾아서 `OrderService`에 주입해준다.
 @Autowired는 생략도 가능하고 생성자가 하나뿐일 경우 자동으로 주입된다.
 
 ## 왜 DI를 써야하는데?
