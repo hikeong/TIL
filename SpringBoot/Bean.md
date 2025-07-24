@@ -48,3 +48,22 @@ public class AppConfig {
     }
 }
 ```
+직접 Bean 객체를 생성해 등록할 수 있으며, 복잡한 설정이 필요한 경우 유용하다.
+
+### (3) XML 기반 설정 (구버전 방식)
+
+```xml
+<bean id="userService" class="com.example.UserServiceImpl" />
+```
+과거에는 XML 파일에 직접 Bean을 등록하는 방식이 일반적이었다.
+
+## 4. Bean의 생명주기
+스프링 Bean은 다음과 같은 생명주기를 가진다.
+
+1. 스프링 컨테이너가 객체 생성
+2. 의존성 주입 수행
+3. 초기화 메서드 호출 (예: `@PostConstruct`)
+4. 애플리케이션에서 사용
+5. 소멸 직전 콜백 호출 (예: `@PreDestroy`)
+
+이러한 라이프사이클은 필요에 따라 커스터마이징할 수 있다
