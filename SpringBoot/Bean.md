@@ -33,3 +33,18 @@
 @Repository // DAO 계층
 @Controller // 컨트롤러 계층
 ```
+
+이런 어노테이션을 클래스에 붙으면 자동으로 Bean이 등록된다 단, `@ComponentScan` 범위 내에 있어야 한다.
+
+### (2) 자바 설정 파일에서 수동 등록 
+
+```java
+@Configuration
+public class AppConfig {
+
+    @Bean
+    public UserService userService() {
+        return new UserServiceImpl();
+    }
+}
+```
