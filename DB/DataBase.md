@@ -46,8 +46,8 @@
 
 | 이름    | 나이 | 이메일             |
 | ------- | ---- | ----------------- |
-| 김철수  | 29   | kimcs@example.com |
-| 이영희  | 34   | leeyh@example.com |
+| 이희수  | 17   | Hyeesooo@example.com |
+| 권용진  | 34   | Dragonjeen@example.com |
 
 - 가로 한 줄: **Row (행)** → 한 사람의 정보  
 - 세로 한 줄: **Column (열)** → 이름, 나이, 이메일 같은 항목  
