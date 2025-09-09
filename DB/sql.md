@@ -11,7 +11,7 @@ SQL은 목적에 따라 여러 가지 명령어로 나뉜다. 대표적으로 �
 
 DDL (Data Definition Language)
 
-데이터베이스와 테이블 구조를 정의하는 명령어.
+데이터베이스와 테이블 구조를 정의하는 명령어
 
 CREATE : 데이터베이스, 테이블 생성
 
@@ -31,7 +31,7 @@ CREATE TABLE users (
 
 ## DML (Data Manipulation Language)
 
-데이터를 조작(삽입, 수정, 삭제)하는 명령어.
+데이터를 조작(삽입, 수정, 삭제)하는 명령어
 
 INSERT : 데이터 삽입
 
@@ -53,7 +53,7 @@ DELETE FROM users WHERE id = 1;
 
 ## DQL (Data Query Language)
 
-데이터를 조회하는 명령어.
+데이터를 조회하는 명령어
 
 SELECT : 데이터 조회
 
@@ -68,7 +68,7 @@ SELECT name, email FROM users WHERE name = '홍길동';
 
 ## DCL (Data Control Language)
 
-사용자의 권한과 보안을 제어하는 명령어.
+사용자의 권한과 보안을 제어하는 명령어
 
 GRANT : 권한 부여
 
@@ -87,7 +87,7 @@ SELECT * FROM users WHERE email LIKE '%@example.com';
 
 ORDER BY 절
 
-데이터를 정렬한다.
+데이터를 정렬한다
 
 ```sql
 SELECT * FROM users ORDER BY created_at DESC;
