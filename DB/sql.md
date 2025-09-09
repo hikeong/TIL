@@ -29,7 +29,7 @@ CREATE TABLE users (
 );
 ```
 
-DML (Data Manipulation Language)
+## DML (Data Manipulation Language)
 
 데이터를 조작(삽입, 수정, 삭제)하는 명령어.
 
@@ -51,7 +51,7 @@ DELETE FROM users WHERE id = 1;
 
 ```
 
-DQL (Data Query Language)
+## DQL (Data Query Language)
 
 데이터를 조회하는 명령어.
 
@@ -66,7 +66,7 @@ SELECT name, email FROM users WHERE name = '홍길동';
 
 ```
 
-DCL (Data Control Language)
+## DCL (Data Control Language)
 
 사용자의 권한과 보안을 제어하는 명령어.
 
