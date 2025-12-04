@@ -1,4 +1,4 @@
-# SQL이란 뭐지?
+# SQL이 뭘까
 
 SQL(Structured Query Language)은 관계형 데이터베이스 관리 시스템(RDBMS)에서 데이터를 다루기 위해 사용하는 언어다.
 데이터를 조회하고, 삽입하고, 수정하고, 삭제하는 모든 과정이 SQL을 통해 이루어진다.
@@ -116,3 +116,9 @@ FROM users u
 JOIN orders o ON u.id = o.user_id;
 
 ```
+
+- COALESCE(col1, col2, co3,…)
+    - 가장 왼쪽에서 null이 아닌 값을 반환하는 sql 함수
+    - ex) COALESCE(col1, ‘~~’) - col1이 null이면 ~~ 반환 아니면 그대로
+    - 여러개도 가능
+        COALESCE(null, null, ‘a’, ‘b’) - a (이미 a에서 값을 반환해서 b는 반환 x)
